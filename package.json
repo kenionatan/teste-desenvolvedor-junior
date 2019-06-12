@@ -1,0 +1,28 @@
+{
+  "name": "teste-desenvolvedor-junior",
+  "version": "1.0.0",
+  "description": "Utilizando Node.js e Express retorne uma página estática que contenha uma lista dos personagens de Rick e Morty com os seguintes atributos: `nome, gênero, status, quantidade de aparições em cada uma das temporadas e aparições no total`, os personagens devem ser lidos a partir do arquivo: `characters.json`.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RogaLabs/teste-desenvolvedor-junior.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RogaLabs/teste-desenvolvedor-junior/issues"
+  },
+  "homepage": "https://github.com/RogaLabs/teste-desenvolvedor-junior#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}

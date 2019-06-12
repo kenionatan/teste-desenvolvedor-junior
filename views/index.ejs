@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="/assets/styles.css">
+    
+
+    <title>Rick and Morty</title>
+  </head>
+  <body>
+      <br>
+
+    <div class="container">
+        <center><b>Personagens</b></center>
+        <br><br>
+
+        <div class="row">
+        <% character.forEach(function(item){ %>
+            <div class="col s4 card-link">
+                <a href="#">
+                    <div class="character-card">
+                        <div class="img-box">
+                            <img src="<%= item.image %>">
+                        </div>
+                        
+                        <div class="card-info">
+                            <h4>
+                                <%= item.name %>
+                            </h4>
+                        </div>
+                        
+                        <div class="location">
+                            <span>Visto por ultimo: </span><%= item.location.name %>
+                        </div>
+
+                        <div class="gender">
+                            <span>Gênero: </span><%= item.gender %>
+                        </div>
+
+                        <div class="status">
+                                <span>Status: </span><%= item.status %>
+                            </div>
+
+                    </div>
+                </a>
+            </div>
+        <% }); %>
+        </div>
+
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  </body>
+</html>

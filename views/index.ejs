@@ -18,7 +18,7 @@
         <br><br>
 
         <div class="row">
-        <% character.forEach(function(item){ %>
+        <% charList.forEach(function(item){ %>
             <div class="col s4 card-link">
                 <a href="#">
                     <div class="character-card">
@@ -32,8 +32,14 @@
                             </h4>
                         </div>
                         
-                        <div class="location">
-                            <span>Visto por ultimo: </span><%= item.location.name %>
+                        <div class="qty">
+                            <span>Aparições Total: </span><%= item.qty %>
+                        </div>
+
+                        <div class="sesions">
+                            <li><span>Aparições na Temporada 1: </span><%= item.s1 %></li>
+                            <li><span>Aparições na Temporada 2: </span><%= item.s2 %></li>
+                            <li><span>Aparições na Temporada 3: </span><%= item.s3 %></li>
                         </div>
 
                         <div class="gender">
@@ -41,8 +47,10 @@
                         </div>
 
                         <div class="status">
-                                <span>Status: </span><%= item.status %>
-                            </div>
+                            <span>Status: </span><%= item.status %>
+                        </div>
+
+                        <div class="loc"><span><%= item.location.name %></span></div>
 
                     </div>
                 </a>

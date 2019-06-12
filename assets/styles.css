@@ -1,10 +1,11 @@
 body {
     background-color: #F3F3F3;
+    font-family: sans-serif;
 }
 
 .character-card {
     background-color: #FFF;
-    height: 380px;
+    height: 470px;
     box-shadow: 0 3px 5px #e1e1e1;
     border-radius: 5px;
     font-family: sans-serif;
@@ -15,8 +16,8 @@ body {
   }
 
 .character-card:hover {
-    box-shadow: 0 5px 8px #e1e1e1;
-    filter: brightness(98%);
+    box-shadow: 0 8px 11px #e1e1e1;
+    filter: brightness(96%);
 }
 
 .character-card .img-box {
@@ -45,24 +46,24 @@ body {
     color: #333;
     font-weight: bold;
     position: absolute;
-    top: 250px;
-    left: 38px;
+    top: 290px;
+    left: 58px;
 }
 
 .card-link a {
 	text-decoration: none;
 }
 
-.character-card .location {
+.character-card .qty {
     font-size: 14px;
     margin: 0 0 10px 0;
     color: #333;
     position: absolute;
-    top: 270px;
-    left: 38px;
+    top: 310px;
+    left: 58px;
 }
 
-.character-card .location span {
+.character-card .qty span {
     font-weight: bold;
 }
 
@@ -71,8 +72,8 @@ body {
     margin: 0 0 10px 0;
     color: #333;
     position: absolute;
-    top: 290px;
-    left: 38px;
+    top: 330px;
+    left: 58px;
 }
 
 .character-card .gender span {
@@ -84,10 +85,57 @@ body {
     margin: 0 0 10px 0;
     color: #333;
     position: absolute;
-    bottom: 10px;
-    left: 38px;
+    bottom: 5px;
+    left: 58px;
 }
 
 .character-card .status span {
     font-weight: bold;
 }
+
+.character-card .sesions li {
+    list-style: none;
+}
+
+.character-card .sesions {
+    font-size: 14px;
+    margin: 0 0 10px 0;
+    color: #333;
+    position: absolute;
+    top: 360px;
+    left: 58px;
+}
+
+.character-card .sesions span {
+    font-weight: bold;
+}
+
+.character-card .loc{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: transparent;
+    padding: 12px;
+    opacity: 0.0;
+    transition: .16s ease-in;
+    z-index: 10;
+    padding: 0 0 0 0;
+  }
+  
+  .character-card .loc span {
+    padding: 10px 10px 10px 10px;
+    right: 0px;
+    top: 0px;
+    width: 40px;
+    border-radius: 5px;
+    background-color: rgb(65, 104, 97);
+    color: #F8F8F8;
+    font-weight: bold;
+    height: 45px;
+  }
+
+  .character-card:hover .loc {
+    right: 15px;
+    top: 20px;
+    opacity: 1;
+  }

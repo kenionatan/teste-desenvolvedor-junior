@@ -1,9 +1,7 @@
 const express = require('express');
 const routes = express.Router();
-const path = require('path');
+const controller = require('../controller/controller')
 
-routes.get('/', (req, res) => {
-	res.render('../views/index');
-});
+routes.get('/', controller.index);
 
 module.exports = routes;
